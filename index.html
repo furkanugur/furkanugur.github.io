@@ -63,5 +63,18 @@
         });
 
     </script>
+	<script>
+        if (window == window.top) {
+            document.getElementById('video-container').id = "video-container-html";
+            document.getElementById('title').style.display = "block";
+            document.getElementById('description').style.display = "block";
+            if(document.body.offsetWidth <= 600) {
+                document.body.style.width = '95%';
+            } else {
+                document.body.style.width = '65%';
+            }
+            document.body.style.margin = '0 auto';
+        }
+    </script>
 </body>
 </html>
