@@ -17,24 +17,7 @@
 <body>
 
     <div class="container">
-        <div class="header clearfix">
-            <h3 class="text-muted">Erstream VideoJs Player Test</h3>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="form-horizontal">
-                    <div class="form-group">
-                        <label for="source" class="col-sm-1 control-label">Source :</label>
-                        <div class="col-md-10">
-                            <input id="source" type="text" class="form-control" />
-                        </div>
-                        <div class="col-md-1">
-                            <button id="btnLoad" type="button" class="btn btn-primary btn-block"> Load </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
         <div class="row">
             <div class="col-xs-12">
                 <div class="embed-responsive embed-responsive-16by9">
@@ -45,9 +28,6 @@
                 </div>
             </div>
         </div>
-        <footer class="footer text-center" style="margin-top: 20px">
-            <p>&copy; 2018 Erstream</p>
-        </footer>
 
     </div>
 
@@ -59,9 +39,9 @@
     <script type="text/javascript">
 
         $(document).ready(function() {
+			var pi = new playerInstance('https://tarimtv-live.ercdn.net/tarimtv/tarimtv.m3u8');
 
-
-            $('#btnLoad').on("click",function() {
+            /*$('#btnLoad').on("click",function() {
                 var link = $('#source').val();
                 if (link.length < 1) {
                     alert("invalid source");
@@ -70,7 +50,7 @@
 
 
                 var pi = new playerInstance(link);
-            });
+            });*/
         });
 
     </script>
